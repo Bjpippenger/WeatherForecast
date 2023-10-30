@@ -1,98 +1,84 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #333;
+  color: white;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h2 {
   font-size: 24px;
-  font-weight: bold;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-#search-form {
-  margin-bottom: 20px;
-}
-
-#city-input {
-  padding: 10px;
-  width: 200px;
-}
-
-button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-#current-weather {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: red;
 }
 
 .current-day {
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.current-day h2 {
+  color: rgb(60, 142, 236);
+  margin: 0;
+  font-size: 45px;
   font-weight: bold;
-  color: #007bff;
-  margin-bottom: 10px;
+  text-decoration: underline;
 }
 
-.current-details p {
-  margin: 5px 0;
+.current-details {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
 }
 
-#forecast {
+.forecast {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
 }
 
 .forecast-item {
-  background-color: #ffffff;
-  padding: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.forecast-item h3 {
-  font-size: 16px;
+.forecast-date {
+  color: rgb(60, 142, 236);
+  font-weight: bold;
   margin-bottom: 10px;
-  color: #333333;
 }
 
-#search-history {
-  display: flex;
-  flex-wrap: wrap;
+.search-history {
+  margin-top: 20px;
 }
 
 .search-item {
-  background-color: #ffffff;
-  padding: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  background-color: #333;
+  color: rgb(60, 142, 236);
+  padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
-  color: #333333;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-style: italic;
 }
 
 .search-item:hover {
-  background-color: #f2f2f2;
+  background-color: #555;
 }
