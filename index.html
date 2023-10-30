@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <div class="container">
-    <h1 class="site-name">Weather App</h1>
-    <div class="search-container">
-      <form id="search-form">
-        <input type="text" id="city-input" placeholder="Enter city">
-        <button type="submit">Search</button>
-      </form>
+  <body>
+    <div class="container">
+      <h1 class="site-name">Weather App</h1>
+      <div class="search-container">
+        <form id="search-form">
+          <input type="text" id="city-input" placeholder="Enter city" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div id="current-weather" class="current-day">
+        <h2>City Name</h2>
+        <div class="current-details">
+          <p>Temperature: 70°F</p>
+          <p>Humidity: 50%</p>
+          <p>Wind Speed: 5 m/s</p>
+        </div>
+      </div>
+      <div id="forecast" class="forecast">
+        <div class="forecast-item">
+          <h3 class="forecast-date">Date 1</h3>
+          <p>Temperature: 75°F</p>
+          <p>Humidity: 55%</p>
+          <p>Wind Speed: 6 m/s</p>
+        </div>
+        <div class="forecast-item">
+          <h3 class="forecast-date">Date 2</h3>
+          <p>Temperature: 80°F</p>
+          <p>Humidity: 60%</p>
+          <p>Wind Speed: 7 m/s</p>
+        </div>
+        <div class="forecast-item">
+          <h3 class="forecast-date">Date 3</h3>
+          <p>Temperature: 85°F</p>
+          <p>Humidity: 65%</p>
+          <p>Wind Speed: 8 m/s</p>
+        </div>
+      </div>
+      <div id="search-history"></div>
     </div>
-    <div id="current-weather" class="current-day">
-      <h2>City Name</h2>
-      <div class="current-details">
-        <p>Temperature: 70°F</p>
-        <p>Humidity: 50%</p>
-        <p>Wind Speed: 5 m/s</p>
-      </div>
-    </div>
-    <div id="forecast" class="forecast">
-      <div class="forecast-item">
-        <h3 class="forecast-date">Date 1</h3>
-        <p>Temperature: 75°F</p>
-        <p>Humidity: 55%</p>
-        <p>Wind Speed: 6 m/s</p>
-      </div>
-      <div class="forecast-item">
-        <h3 class="forecast-date">Date 2</h3>
-        <p>Temperature: 80°F</p>
-        <p>Humidity: 60%</p>
-        <p>Wind Speed: 7 m/s</p>
-      </div>
-      <div class="forecast-item">
-        <h3 class="forecast-date">Date 3</h3>
-        <p>Temperature: 85°F</p>
-        <p>Humidity: 65%</p>
-        <p>Wind Speed: 8 m/s</p>
-      </div>
-    </div>
-    <div id="search-history"></div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
